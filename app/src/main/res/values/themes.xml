@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.SunPositionManual" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryColorVariant</item>
+        <item name="colorOnPrimary">@color/onPrimaryColor</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryColorVariant</item>
+        <item name="colorOnSecondary">@color/onSecondaryColor</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/onBackgroundColor</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/onSurfaceColor</item>
+
+        <!-- Status and navigation bar -->
+        <item name="android:statusBarColor">@color/primaryColorVariant</item>
+        <item name="android:navigationBarColor">@color/surfaceColor</item>
+
+        <!-- Typography -->
+        <item name="android:textColorPrimary">@color/onBackgroundColor</item>
+        <item name="android:textColorSecondary">@color/onSurfaceColor</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+
+</resources>

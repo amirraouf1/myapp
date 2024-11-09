@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette -->
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryColorVariant">#3700B3</color>
+    <color name="onPrimaryColor">#FFFFFF</color>
+
+    <!-- Secondary palette -->
+    <color name="secondaryColor">#03DAC5</color>
+    <color name="secondaryColorVariant">#018786</color>
+    <color name="onSecondaryColor">#000000</color>
+
+    <!-- Background and surface colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="onBackgroundColor">#000000</color>
+    <color name="surfaceColor">#F5F5F5</color>
+    <color name="onSurfaceColor">#000000</color>
+
+    <!-- Error colors -->
+    <color name="errorColor">#B00020</color>
+    <color name="onErrorColor">#FFFFFF</color>
+
+    <!-- Add missing color definitions -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

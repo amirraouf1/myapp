@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Latitude Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/latitude_degree_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lat (°)" />
+
+            <EditText
+                android:id="@+id/latitude_minute_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lat (')" />
+
+            <EditText
+                android:id="@+id/latitude_second_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lat (&quot;)" />
+
+            <Spinner
+                android:id="@+id/latitude_direction_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/latitude_directions" />
+        </LinearLayout>
+
+        <!-- Longitude Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/longitude_degree_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lon (°)" />
+
+            <EditText
+                android:id="@+id/longitude_minute_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lon (')" />
+
+            <EditText
+                android:id="@+id/longitude_second_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lon (&quot;)" />
+
+            <Spinner
+                android:id="@+id/longitude_direction_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/longitude_directions" />
+        </LinearLayout>
+
+        <!-- Date Input with Calendar Picker -->
+        <EditText
+            android:id="@+id/date_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:layout_marginTop="16dp"
+            android:drawableEnd="@drawable/ic_calendar" />
+
+        <!-- Time Input with Time Picker -->
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Time"
+            android:focusable="false"
+            android:layout_marginTop="16dp"
+            android:drawableEnd="@drawable/ic_clock" />
+
+        <!-- Time Zone Spinner Inputs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Spinner
+                android:id="@+id/timezone_hour_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/timezone_hour_prompt" />
+
+            <Spinner
+                android:id="@+id/timezone_minute_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/timezone_minute_prompt" />
+        </LinearLayout>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Sun Position"
+            android:layout_marginTop="16dp" />
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Results will be shown here" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="timezone_prompt">Select Time Zone</string>
+    <string name="timezone_hour_prompt">Select Time Zone</string>
+    <string name="timezone_minute_prompt">Select Time Zone</string>
+    <string name="manual_mode_label">Manual Mode</string>
+    <string name="automatic_mode_label">Automatic Mode</string>
+
+</resources>

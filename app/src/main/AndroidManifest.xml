@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sun_position_manual">
+
+    <!-- Permissions required -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+        </activity>
+
+        <!-- Manual Mode activity -->
+        <activity
+            android:name=".ManualModeActivity"
+            android:label="@string/manual_mode_label"
+            android:exported="true">
+        </activity>
+
+        <!-- Automatic Mode activity -->
+        <activity
+            android:name=".AutoModeActivity"
+            android:label="@string/automatic_mode_label"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>
